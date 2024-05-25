@@ -1,5 +1,6 @@
+
 public class SmartTv {
-    
+
     boolean ligada = false;
     int canal = 1;
     int volume = 25;
@@ -30,5 +31,11 @@ public class SmartTv {
 
     public void desligar(){
         ligada = false;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
     }
 }
