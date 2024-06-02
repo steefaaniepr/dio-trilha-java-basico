@@ -1,7 +1,0 @@
-/**
- * ProcessoSeletivo
- */
-public class ProcessoSeletivo {
-
-    
-}
