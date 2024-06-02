@@ -1,6 +1,9 @@
 package candidatura; 
 
 public class ProcessoSeletivo {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         analisarCandidato(1900.0);
         analisarCandidato(2200.0);
