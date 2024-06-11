@@ -11,7 +11,27 @@ public class ProcessoSeletivo {
         String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO", "MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
 
         for(String candidato: candidatos) {
+            entrandoEmContato(candidato);
+        }
+    }
 
+    static void entrandoEmContato(String candidato){
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu= false;
+        do {
+            atendeu= atender();
+            continuarTentando= !atendeu;
+            if (continuarTentando) {
+                tentativasRealizadas++;
+            }else{
+                System.out.println("CONTATO REALIZADO COM SUCESSO");
+            }
+        }while(continuarTentando && tentativasRealizadas<3);
+
+        if (atendeu) {
+            System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA " + tentativasRealizadas + " TENTATIVAS");
+            System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato + ", NUMERO MÁXIMO DE TENTATIVAS " + tentativasRealizadas +  " TENTATIVAS");
         }
     }
 
