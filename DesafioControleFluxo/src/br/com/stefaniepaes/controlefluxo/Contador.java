@@ -16,6 +16,8 @@ public class Contador {
             
 		}catch (ParametrosInvalidosException e) {
 			//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
+            System.err.println(e.getMessage());
+            // Esta linha imprime a mensagem de erro da exceção no fluxo de erro padrão
 		}
 		
 	}
