@@ -3,9 +3,8 @@ import java.util.Scanner;
 
 public class Contador {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		
-		try {
+	
+		try (Scanner scanner = new Scanner(System.in)) {
             //chamando o método contendo a lógica de contagem
             System.out.println("Digite o primeiro parâmetro");
             int parametroUm = scanner.nextInt();
