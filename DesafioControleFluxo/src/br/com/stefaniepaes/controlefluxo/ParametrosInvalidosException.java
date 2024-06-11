@@ -1,9 +1,9 @@
 package br.com.stefaniepaes.controlefluxo;
 
-public class ParametrosInvalidosException {
+public class ParametrosInvalidosException extends Exception {
 
     public ParametrosInvalidosException(String message) {
-        super();
+        super(message);
     }
     
 }
