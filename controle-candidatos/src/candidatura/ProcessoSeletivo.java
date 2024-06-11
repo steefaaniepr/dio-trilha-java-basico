@@ -1,4 +1,5 @@
 package candidatura; 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
@@ -6,6 +7,16 @@ public class ProcessoSeletivo {
         //analisarCandidato();
         //selecaoCandidatos();
         //imprimirSelecionado();
+
+        String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO", "MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
+
+        for(String candidato: candidatos) {
+
+        }
+    }
+
+    static boolean atender(){
+        return new Random().nextInt(3)==1;
     }
 
     static void imprimirSelecionado() {
