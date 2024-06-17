@@ -1,7 +1,7 @@
 package smartphone;
 
 public interface NavegadorInternet {
-    void exibirPagina();
+    void exibirPagina(String url);
     void adicionarNovaAba();
     void atualizarPagina();
 }
