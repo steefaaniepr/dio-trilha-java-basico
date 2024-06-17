@@ -2,6 +2,46 @@
 
 Neste desafio, sou responsável por modelar e diagramar a representação do componente iPhone abrangendo as funcionalidades Reprodutor Musical, Aparelho Telefonico e Navegador na Internet. 
 
+
+## Diagrama UML
+
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        +void tocar()
+        +void pausar()
+        +void selecionarMusica(String musica)
+    }
+
+    class AparelhoTelefonico {
+        +void ligar(String numero)
+        +void atender()
+        +void iniciarCorreioVoz()
+    }
+
+    class NavegadorInternet {
+        +void exibirPagina(String url)
+        +void adicionarNovaAba()
+        +void atualizarPagina()
+    }
+
+    class iPhone {
+        +void tocar()
+        +void pausar()
+        +void selecionarMusica(String musica)
+        +void ligar(String numero)
+        +void atender()
+        +void iniciarCorreioVoz()
+        +void exibirPagina(String url)
+        +void adicionarNovaAba()
+        +void atualizarPagina()
+    }
+
+    iPhone ..|> ReprodutorMusical
+    iPhone ..|> AparelhoTelefonico
+    iPhone ..|> NavegadorInternet
+
+
 ## Funcionalidades
 
 ### Reprodutor Musical
