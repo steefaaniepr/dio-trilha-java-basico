@@ -4,43 +4,7 @@ Neste desafio, sou responsável por modelar e diagramar a representação do com
 
 
 ## Diagrama UML
-
-classDiagram
-    class AparelhoTelefonico {
-    +ligar(String numero)
-    +atender()
-    +iniciarCorreioVoz()
-   }
-
-   class ReprodutorMusical {
-    +tocar()
-    +pausar()
-    +selecionarMusica(String musica)
-   }
-
-   class ANavegadorInternet {
-    +exibirPagina(String url)
-    +adicionarNovaAba()
-    +atualizarPagina()
-   }
-
-   class iPhone {
-    +void tocar()
-    +void pausar()
-    +void selecionarMusica(String musica)
-    +void ligar(String numero)
-    +void atender()
-    +void iniciarCorreioVoz()
-    +void exibirPagina(String url)
-    +void adicionarNovaAba()
-    +void atualizarPagina()
-   }
-
-   iPhone ..|> ReprodutorMusical
-   iPhone ..|> AparelhoTelefonico
-   iPhone ..|> NavegadorInternet
-
-
+![Diagrama UML do iPhone](./src/smartphone/seets/iphonediagrama.png)
 
 ## Funcionalidades
 
