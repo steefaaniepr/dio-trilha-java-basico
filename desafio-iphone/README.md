@@ -1,18 +1,29 @@
-## Getting Started
+# Desafio iPhone - Modelagem e Diagramação de um componente iPhone 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste desafio, sou responsável por modelar e diagramar a representação do componente iPhone abrangendo as funcionalidades Reprodutor Musical, Aparelho Telefonico e Navegador na Internet. 
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+### Reprodutor Musical
+- `tocar()`: Toca a música.
+- `pausar()`: Pausa a música.
+- `selecionarMusica(String musica)`: Seleciona uma música específica.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Aparelho Telefônico
+- `ligar(String numero)`: Liga para um número.
+- `atender()`: Atende uma chamada.
+- `iniciarCorreioVoz()`: Inicia o correio de voz.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Navegador na Internet
+- `exibirPagina(String url)`: Exibe uma página web.
+- `adicionarNovaAba()`: Adiciona uma nova aba no navegador.
+- `atualizarPagina()`: Atualiza a página web atual.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Como Executar
 
-## Dependency Management
+1. Compile os arquivos Java:
+   ```bash
+   javac src/*.java
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Link do repositorio do desafio: (url)https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/poo
+
