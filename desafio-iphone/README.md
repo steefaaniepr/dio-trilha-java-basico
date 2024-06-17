@@ -5,41 +5,41 @@ Neste desafio, sou responsável por modelar e diagramar a representação do com
 
 ## Diagrama UML
 
-```mermaid
 classDiagram
-    class ReprodutorMusical {
-        +void tocar()
-        +void pausar()
-        +void selecionarMusica(String musica)
-    }
-
     class AparelhoTelefonico {
-        +void ligar(String numero)
-        +void atender()
-        +void iniciarCorreioVoz()
-    }
+    +ligar(String numero)
+    +atender()
+    +iniciarCorreioVoz()
+   }
 
-    class NavegadorInternet {
-        +void exibirPagina(String url)
-        +void adicionarNovaAba()
-        +void atualizarPagina()
-    }
+   class ReprodutorMusical {
+    +tocar()
+    +pausar()
+    +selecionarMusica(String musica)
+   }
 
-    class iPhone {
-        +void tocar()
-        +void pausar()
-        +void selecionarMusica(String musica)
-        +void ligar(String numero)
-        +void atender()
-        +void iniciarCorreioVoz()
-        +void exibirPagina(String url)
-        +void adicionarNovaAba()
-        +void atualizarPagina()
-    }
+   class ANavegadorInternet {
+    +exibirPagina(String url)
+    +adicionarNovaAba()
+    +atualizarPagina()
+   }
 
-    iPhone ..|> ReprodutorMusical
-    iPhone ..|> AparelhoTelefonico
-    iPhone ..|> NavegadorInternet
+   class iPhone {
+    +void tocar()
+    +void pausar()
+    +void selecionarMusica(String musica)
+    +void ligar(String numero)
+    +void atender()
+    +void iniciarCorreioVoz()
+    +void exibirPagina(String url)
+    +void adicionarNovaAba()
+    +void atualizarPagina()
+   }
+
+   iPhone ..|> ReprodutorMusical
+   iPhone ..|> AparelhoTelefonico
+   iPhone ..|> NavegadorInternet
+
 
 
 ## Funcionalidades
