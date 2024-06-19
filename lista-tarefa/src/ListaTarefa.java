@@ -21,8 +21,9 @@ public class ListaTarefa {
             }
         }
         tarefaList.removeAll(tarefaParaRemover);
-
     }
-    
-    
+
+    public void obterDescricoesTarefas() {
+        System.out.println(tarefaList);
+    }
 }
