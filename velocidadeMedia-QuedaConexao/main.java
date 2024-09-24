@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class main {
 
     // Função para calcular a velocidade média de conexão de internet
     public static double calcularVelocidadeMedia(String[] velocidades) {
