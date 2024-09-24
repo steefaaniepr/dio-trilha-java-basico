@@ -31,3 +31,18 @@ public class main {
         scanner.close();
     }
 }
+
+// Explicação do Código
+// Entrada do Usuário:
+
+// O programa solicita ao usuário para inserir as velocidades de conexão separadas por vírgula.
+// Divisão dos Valores:
+
+// A entrada do usuário é convertida em um array de strings usando split(",").
+// Cálculo da Média:
+
+// A função calcularVelocidadeMedia percorre o array, somando todas as velocidades.
+// Calcula a média dividindo a soma pelo número de velocidades.
+// Exibição do Resultado:
+
+// O resultado final é exibido em Mbps como um número inteiro.
