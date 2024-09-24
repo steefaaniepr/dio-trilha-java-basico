@@ -13,7 +13,7 @@ public class main {
         return (double) total / velocidades.length;
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) { 
         Scanner scanner = new Scanner(System.in);
 
         // Solicitando ao usuário a lista de velocidades de conexão registradas a cada hora
